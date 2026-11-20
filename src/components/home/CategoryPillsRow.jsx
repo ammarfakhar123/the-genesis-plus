@@ -6,14 +6,14 @@ export default function CategoryPillsRow({ activeCategory, setActiveCategory }) 
     <div className="max-w-[1500px] mx-auto px-4 sm:px-6 pt-10 select-none">
       <div className="flex items-center justify-between mb-5">
         <div>
-          <h2 className="text-lg sm:text-2xl font-black text-[#0F172A] font-heading">
+          <h2 className="text-lg sm:text-2xl font-bold text-slate-900 font-heading">
             Shop by Department
           </h2>
-          <p className="text-xs text-slate-500">
+          <p className="text-xs text-slate-500 font-normal">
             Select a specialty category to filter verified products
           </p>
         </div>
-        <Link to="/products" className="text-xs font-bold text-[#10367D] hover:underline">
+        <Link to="/products" className="text-xs font-semibold text-[#10367D] hover:underline">
           View all categories ›
         </Link>
       </div>
@@ -25,18 +25,18 @@ export default function CategoryPillsRow({ activeCategory, setActiveCategory }) 
           onClick={() => setActiveCategory('all')}
           className={`flex items-center space-x-3 p-3.5 rounded-2xl border text-left transition-all ${
             activeCategory === 'all'
-              ? 'bg-[#10367D] text-white border-[#10367D] shadow-md'
+              ? 'bg-[#10367D] text-white border-[#10367D] shadow-sm'
               : 'bg-white hover:bg-slate-50 text-slate-800 border-slate-200'
           }`}
         >
-          <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 text-xl ${
+          <div className={`w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg ${
             activeCategory === 'all' ? 'bg-white/20 text-white' : 'bg-[#E1EDF9] text-[#10367D]'
           }`}>
             ⭐
           </div>
           <div>
-            <span className="block text-xs font-black font-heading">All Specialties</span>
-            <span className={`text-[11px] ${activeCategory === 'all' ? 'text-slate-200' : 'text-slate-500'}`}>
+            <span className="block text-xs font-semibold font-heading">All Specialties</span>
+            <span className={`text-[11px] font-normal ${activeCategory === 'all' ? 'text-slate-200' : 'text-slate-500'}`}>
               5 verified items
             </span>
           </div>
@@ -48,18 +48,18 @@ export default function CategoryPillsRow({ activeCategory, setActiveCategory }) 
           onClick={() => setActiveCategory('sours')}
           className={`flex items-center space-x-3 p-3.5 rounded-2xl border text-left transition-all ${
             activeCategory === 'sours'
-              ? 'bg-[#10367D] text-white border-[#10367D] shadow-md'
+              ? 'bg-[#10367D] text-white border-[#10367D] shadow-sm'
               : 'bg-white hover:bg-slate-50 text-slate-800 border-slate-200'
           }`}
         >
-          <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 text-xl ${
+          <div className={`w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg ${
             activeCategory === 'sours' ? 'bg-white/20 text-white' : 'bg-[#E1EDF9] text-[#10367D]'
           }`}>
             🍬
           </div>
           <div>
-            <span className="block text-xs font-black font-heading">British Mega Sours</span>
-            <span className={`text-[11px] ${activeCategory === 'sours' ? 'text-slate-200' : 'text-slate-500'}`}>
+            <span className="block text-xs font-semibold font-heading">British Mega Sours</span>
+            <span className={`text-[11px] font-normal ${activeCategory === 'sours' ? 'text-slate-200' : 'text-slate-500'}`}>
               Barnetts UK Candy
             </span>
           </div>
@@ -75,14 +75,14 @@ export default function CategoryPillsRow({ activeCategory, setActiveCategory }) 
               : 'bg-white hover:bg-slate-50 text-slate-800 border-slate-200'
           }`}
         >
-          <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 text-xl ${
+          <div className={`w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg ${
             activeCategory === 'cologne' ? 'bg-white/20 text-white' : 'bg-[#E1EDF9] text-[#10367D]'
           }`}>
             🌊
           </div>
           <div>
-            <span className="block text-xs font-black font-heading">Florida Water 1808</span>
-            <span className={`text-[11px] ${activeCategory === 'cologne' ? 'text-slate-200' : 'text-slate-500'}`}>
+            <span className="block text-xs font-semibold font-heading">Florida Water 1808</span>
+            <span className={`text-[11px] font-normal ${activeCategory === 'cologne' ? 'text-slate-200' : 'text-slate-500'}`}>
               Murray &amp; Lanman
             </span>
           </div>
@@ -98,14 +98,14 @@ export default function CategoryPillsRow({ activeCategory, setActiveCategory }) 
               : 'bg-white hover:bg-slate-50 text-slate-800 border-slate-200'
           }`}
         >
-          <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 text-xl ${
+          <div className={`w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg ${
             activeCategory === 'oral' ? 'bg-white/20 text-white' : 'bg-[#E1EDF9] text-[#10367D]'
           }`}>
             🪥
           </div>
           <div>
-            <span className="block text-xs font-black font-heading">Mineral Oral Care</span>
-            <span className={`text-[11px] ${activeCategory === 'oral' ? 'text-slate-200' : 'text-slate-500'}`}>
+            <span className="block text-xs font-semibold font-heading">Mineral Oral Care</span>
+            <span className={`text-[11px] font-normal ${activeCategory === 'oral' ? 'text-slate-200' : 'text-slate-500'}`}>
               Zion Health ClayBrite
             </span>
           </div>

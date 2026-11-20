@@ -30,7 +30,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 shadow-xs font-sans select-none border-b border-slate-200 bg-white">
-      {/* 1. AMAZON MAIN TOP HEADER - CLEAN WHITE BACKGROUND */}
+      {/* 1. MAIN TOP HEADER - CLEAN WHITE BACKGROUND & ELEGANT TYPOGRAPHY */}
       <div className="bg-white text-slate-800 px-3 sm:px-6 py-2.5 border-b border-slate-100">
         <div className="max-w-[1500px] mx-auto flex items-center justify-between gap-3 sm:gap-6">
           
@@ -43,7 +43,7 @@ export default function Header() {
             />
           </Link>
 
-          {/* Dynamic "Deliver to [Country]" Pill - Triggers Country & Currency Selector Modal */}
+          {/* Dynamic "Deliver to [Country]" Pill */}
           <button
             type="button"
             onClick={() => setIsModalOpen(true)}
@@ -55,10 +55,10 @@ export default function Header() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
             <div className="flex flex-col leading-tight">
-              <span className="text-[11px] text-slate-500 font-medium">Deliver to</span>
-              <span className="font-extrabold text-[#10367D] text-xs flex items-center space-x-1">
+              <span className="text-[11px] text-slate-500 font-normal">Deliver to</span>
+              <span className="font-semibold text-[#10367D] text-xs flex items-center space-x-1">
                 <span>{selectedCountry.name}</span>
-                <span className="text-[10px] text-slate-400">▼</span>
+                <span className="text-[10px] text-slate-400 font-normal">▼</span>
               </span>
             </div>
           </button>
@@ -69,7 +69,7 @@ export default function Header() {
             <select
               value={selectedDept}
               onChange={(e) => setSelectedDept(e.target.value)}
-              className="bg-[#F1F5F9] hover:bg-slate-200 text-[#10367D] text-xs font-black px-3 py-2 border-r border-slate-300 focus:outline-none cursor-pointer shrink-0"
+              className="bg-[#F1F5F9] hover:bg-slate-200 text-[#10367D] text-xs font-semibold px-3 py-2 border-r border-slate-300 focus:outline-none cursor-pointer shrink-0"
               aria-label="Select department"
             >
               <option value="All">All</option>
@@ -84,7 +84,7 @@ export default function Header() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search The Genesis Plus..."
-              className="flex-1 px-4 py-2 text-xs sm:text-sm text-slate-900 placeholder-slate-400 bg-white focus:outline-none"
+              className="flex-1 px-4 py-2 text-xs sm:text-sm text-slate-900 placeholder-slate-400 bg-white focus:outline-none font-normal"
             />
 
             {/* Search Button in Brand Navy #10367D */}
@@ -93,7 +93,7 @@ export default function Header() {
               className="bg-[#10367D] hover:bg-[#0C2B64] text-white px-5 flex items-center justify-center transition-colors shrink-0"
               aria-label="Search"
             >
-              <svg className="w-5 h-5 text-white font-bold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
               </svg>
             </button>
@@ -109,8 +109,8 @@ export default function Header() {
               title="Change Country & Currency"
             >
               <span className="text-base">{selectedCountry.flag}</span>
-              <span className="font-black text-xs text-slate-800 font-heading">{selectedCountry.code}</span>
-              <span className="text-[10px] text-slate-400">▼</span>
+              <span className="font-semibold text-xs text-slate-800 font-heading">{selectedCountry.code}</span>
+              <span className="text-[10px] text-slate-400 font-normal">▼</span>
             </button>
 
             {/* Account & Lists */}
@@ -118,8 +118,8 @@ export default function Header() {
               to="/contact"
               className="hidden lg:flex flex-col text-left leading-tight px-2 py-1.5 rounded hover:bg-slate-100 transition-colors"
             >
-              <span className="text-[11px] text-slate-500">Hello, Guest</span>
-              <span className="font-black text-xs text-[#10367D]">Account &amp; Lists</span>
+              <span className="text-[11px] text-slate-500 font-normal">Hello, Guest</span>
+              <span className="font-semibold text-xs text-[#10367D]">Account &amp; Lists</span>
             </Link>
 
             {/* Returns & Orders */}
@@ -127,8 +127,8 @@ export default function Header() {
               to="/products"
               className="hidden md:flex flex-col text-left leading-tight px-2 py-1.5 rounded hover:bg-slate-100 transition-colors"
             >
-              <span className="text-[11px] text-slate-500">Returns</span>
-              <span className="font-black text-xs text-[#10367D]">&amp; Orders</span>
+              <span className="text-[11px] text-slate-500 font-normal">Returns</span>
+              <span className="font-semibold text-xs text-[#10367D]">&amp; Orders</span>
             </Link>
 
             {/* Cart Icon with count */}
@@ -141,11 +141,11 @@ export default function Header() {
                 <svg className="w-7 h-7 text-[#10367D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
-                <span className="absolute -top-1.5 -right-1.5 bg-[#E11D48] text-white font-black text-[10px] w-4 h-4 rounded-full flex items-center justify-center shadow-xs">
+                <span className="absolute -top-1.5 -right-1.5 bg-[#E11D48] text-white font-bold text-[10px] w-4 h-4 rounded-full flex items-center justify-center shadow-xs">
                   5
                 </span>
               </div>
-              <span className="hidden sm:inline font-black text-xs text-[#10367D]">Cart</span>
+              <span className="hidden sm:inline font-semibold text-xs text-[#10367D]">Cart</span>
             </Link>
 
             {/* Mobile Hamburger Toggle */}
@@ -170,7 +170,7 @@ export default function Header() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search The Genesis Plus..."
-              className="flex-1 px-3 py-2 text-xs text-slate-900 bg-white focus:outline-none"
+              className="flex-1 px-3 py-2 text-xs text-slate-900 bg-white focus:outline-none font-normal"
             />
             <button type="submit" className="bg-[#10367D] px-4 flex items-center justify-center text-white">
               <svg className="w-4 h-4 font-bold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -192,20 +192,20 @@ export default function Header() {
               </svg>
               <span>Deliver to <strong>{selectedCountry.name}</strong></span>
             </div>
-            <span className="font-bold text-[#10367D]">{selectedCountry.flag} {selectedCountry.code} ›</span>
+            <span className="font-semibold text-[#10367D]">{selectedCountry.flag} {selectedCountry.code} ›</span>
           </button>
         </div>
       </div>
 
-      {/* 2. AMAZON SUB-NAV BAR - CLEAN & UNOBSTRUCTED (RIGHT SIDE TEXT REMOVED PER USER REQUEST) */}
-      <div className="bg-[#F8FAFC] text-slate-700 text-xs px-3 sm:px-6 py-2 border-b border-slate-200 font-bold">
+      {/* 2. SUB-NAV BAR - CLEAN & BALANCED */}
+      <div className="bg-[#F8FAFC] text-slate-700 text-xs px-3 sm:px-6 py-2 border-b border-slate-200 font-medium">
         <div className="max-w-[1500px] mx-auto flex items-center overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden gap-3 sm:gap-4">
           
           {/* "All" Hamburger Menu */}
           <button
             type="button"
             onClick={() => setIsDeptOpen(!isDeptOpen)}
-            className="flex items-center space-x-1.5 font-black text-[#10367D] hover:bg-slate-200 transition-colors px-2 py-1 rounded-lg shrink-0"
+            className="flex items-center space-x-1.5 font-semibold text-[#10367D] hover:bg-slate-200 transition-colors px-2 py-1 rounded-lg shrink-0"
           >
             <svg className="w-4 h-4 text-[#10367D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M4 6h16M4 12h16M4 18h16" />
@@ -246,7 +246,7 @@ export default function Header() {
                 key={dept.id}
                 to="/products"
                 onClick={() => setIsDeptOpen(false)}
-                className="p-3 rounded-xl hover:bg-slate-50 text-[#10367D] font-extrabold border border-slate-100 hover:border-[#74B4DA] transition-all"
+                className="p-3 rounded-xl hover:bg-slate-50 text-[#10367D] font-semibold border border-slate-100 hover:border-[#74B4DA] transition-all"
               >
                 {dept.name}
               </Link>
@@ -261,35 +261,35 @@ export default function Header() {
           <Link
             to="/"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="block py-2 font-bold text-[#10367D] hover:bg-slate-50 rounded px-2"
+            className="block py-2 font-semibold text-[#10367D] hover:bg-slate-50 rounded px-2"
           >
             Home
           </Link>
           <Link
             to="/products"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="block py-2 font-bold text-[#10367D] hover:bg-slate-50 rounded px-2"
+            className="block py-2 font-semibold text-[#10367D] hover:bg-slate-50 rounded px-2"
           >
             All Verified Products (5)
           </Link>
           <a
             href="/#deals"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="block py-2 font-bold text-[#10367D] hover:bg-slate-50 rounded px-2"
+            className="block py-2 font-semibold text-[#10367D] hover:bg-slate-50 rounded px-2"
           >
             Today's Deals
           </a>
           <Link
             to="/about"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="block py-2 font-bold text-[#10367D] hover:bg-slate-50 rounded px-2"
+            className="block py-2 font-semibold text-[#10367D] hover:bg-slate-50 rounded px-2"
           >
             About Us
           </Link>
           <Link
             to="/contact"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="block py-2 font-bold text-[#10367D] hover:bg-slate-50 rounded px-2"
+            className="block py-2 font-semibold text-[#10367D] hover:bg-slate-50 rounded px-2"
           >
             Customer Service
           </Link>

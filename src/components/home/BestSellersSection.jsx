@@ -9,16 +9,16 @@ export default function BestSellersSection({ products }) {
         
         <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-5 mb-6 border-b border-slate-100 gap-3">
           <div>
-            <h2 className="text-xl sm:text-2xl font-black text-[#0F172A] font-heading">
+            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 font-heading">
               Best Sellers in Confectionery, Fragrance &amp; Wellness
             </h2>
-            <p className="text-xs text-slate-500">
+            <p className="text-xs text-slate-500 font-normal">
               Top rated customer favorites with verified reviews and direct dispatch
             </p>
           </div>
           <Link
             to="/products"
-            className="text-xs font-black text-[#10367D] hover:text-[#0C2B64] hover:underline"
+            className="text-xs font-semibold text-[#10367D] hover:text-[#0C2B64] hover:underline"
           >
             See all rankings ›
           </Link>
