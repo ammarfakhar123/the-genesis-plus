@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#edf2f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bgGrad)"/>
+  
+  <rect x="40" y="40" width="170" height="34" rx="17" fill="#0c4a6e"/>
+  <text x="125" y="62" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">PRODUCT GUIDE</text>
+
+  <g transform="translate(100, 120)">
+    <rect x="0" y="0" width="600" height="580" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="300" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="bold" fill="#0f172a" text-anchor="middle">Versatile Everyday Applications</text>
+    <text x="300" y="85" font-family="Inter, sans-serif" font-size="14" fill="#64748b" text-anchor="middle">How customers enjoy Florida Water around the world</text>
+
+    <!-- Grid of 4 items -->
+    <g transform="translate(40, 120)">
+      <!-- Item 1 -->
+      <rect x="0" y="0" width="245" height="170" rx="12" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1.5"/>
+      <text x="25" y="45" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="bold" fill="#0369a1">Post-Shower Splash</text>
+      <text x="25" y="75" font-family="Inter, sans-serif" font-size="13" fill="#334155" width="200">
+        <tspan x="25" dy="0">Splash generously over</tspan>
+        <tspan x="25" dy="20">damp skin after showering</tspan>
+        <tspan x="25" dy="20">for an all-day crisp citrus</tspan>
+        <tspan x="25" dy="20">cooling effect.</tspan>
+      </text>
+
+      <!-- Item 2 -->
+      <rect x="275" y="0" width="245" height="170" rx="12" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+      <text x="300" y="45" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="bold" fill="#15803d">Soothing Aftershave</text>
+      <text x="300" y="75" font-family="Inter, sans-serif" font-size="13" fill="#334155">
+        <tspan x="300" dy="0">Calms razor burn with its</tspan>
+        <tspan x="300" dy="20">gentle astringent alcohol</tspan>
+        <tspan x="300" dy="20">base and invigorating</tspan>
+        <tspan x="300" dy="20">clean fragrance.</tspan>
+      </text>
+
+      <!-- Item 3 -->
+      <rect x="0" y="200" width="245" height="170" rx="12" fill="#faf5ff" stroke="#e9d5ff" stroke-width="1.5"/>
+      <text x="25" y="245" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="bold" fill="#7e22ce">Aromatherapy Mist</text>
+      <text x="25" y="275" font-family="Inter, sans-serif" font-size="13" fill="#334155">
+        <tspan x="25" dy="0">Dilute in water to mist</tspan>
+        <tspan x="25" dy="20">bed linens, personal study</tspan>
+        <tspan x="25" dy="20">spaces, or yoga studios</tspan>
+        <tspan x="25" dy="20">for mental clarity.</tspan>
+      </text>
+
+      <!-- Item 4 -->
+      <rect x="275" y="200" width="245" height="170" rx="12" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
+      <text x="300" y="245" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="bold" fill="#c2410c">Energy Cleansing</text>
+      <text x="300" y="275" font-family="Inter, sans-serif" font-size="13" fill="#334155">
+        <tspan x="300" dy="0">Traditional ritual wash</tspan>
+        <tspan x="300" dy="20">used across cultures to</tspan>
+        <tspan x="300" dy="20">clear negative energies</tspan>
+        <tspan x="300" dy="20">and welcome calm.</tspan>
+      </text>
+    </g>
+
+    <text x="300" y="535" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">Net Volume: 7.5 fl oz (221 mL) • Glass/PET Bottle Format</text>
+  </g>
+</svg>

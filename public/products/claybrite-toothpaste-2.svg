@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#edf2f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bgGrad)"/>
+  
+  <rect x="40" y="40" width="180" height="34" rx="17" fill="#059669"/>
+  <text x="130" y="62" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">MINERAL INGREDIENTS</text>
+
+  <g transform="translate(100, 120)">
+    <rect x="0" y="0" width="600" height="580" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="300" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="bold" fill="#0f172a" text-anchor="middle">Healing Earth Minerals &amp; Botanicals</text>
+    <text x="300" y="85" font-family="Inter, sans-serif" font-size="14" fill="#64748b" text-anchor="middle">Active Natural Components in ClayBrite Sensitive</text>
+
+    <!-- 3 Ingredients Cards -->
+    <g transform="translate(50, 125)">
+      <!-- Card 1: White Kaolin Clay -->
+      <rect x="0" y="0" width="500" height="110" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+      <circle cx="50" cy="55" r="28" fill="#10b981"/>
+      <text x="50" y="61" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">CLAY</text>
+      <text x="100" y="45" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="bold" fill="#065f46">White Kaolin &amp; Montmorillonite</text>
+      <text x="100" y="72" font-family="Inter, sans-serif" font-size="13" fill="#14532d">Ultra-gentle mineral clay cleanses microscopic plaque without scratching enamel.</text>
+
+      <!-- Card 2: Green Tea Extract -->
+      <rect x="0" y="130" width="500" height="110" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+      <circle cx="50" cy="185" r="28" fill="#059669"/>
+      <text x="50" y="191" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">TEA</text>
+      <text x="100" y="175" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="bold" fill="#065f46">Antioxidant Green Tea Extract</text>
+      <text x="100" y="202" font-family="Inter, sans-serif" font-size="13" fill="#14532d">Delivers botanical polyphenols that soothe gum tenderness and calm nerve sensitivity.</text>
+
+      <!-- Card 3: Baking Soda -->
+      <rect x="0" y="260" width="500" height="110" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+      <circle cx="50" cy="315" r="28" fill="#047857"/>
+      <text x="50" y="321" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">SODA</text>
+      <text x="100" y="305" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="bold" fill="#065f46">Sodium Bicarbonate (Baking Soda)</text>
+      <text x="100" y="332" font-family="Inter, sans-serif" font-size="13" fill="#14532d">Neutralizes dietary acids and supports optimal oral pH balance naturally.</text>
+    </g>
+
+    <text x="300" y="525" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#059669" text-anchor="middle">0% Fluoride • 0% SLS • 0% Artificial Colors • 100% Vegan</text>
+  </g>
+</svg>
